@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Bab2.Models;
+using Bab2.ViewModels;
 
 namespace Bab2
 {
     public partial class TambahBarangPage : ContentPage
     {
-        public TambahBarangPage()
+        private ListViewButtonViewModel myList;
+
+        public TambahBarangPage(ListViewButtonViewModel myList)
         {
             InitializeComponent();
+
+            this.myList = myList;
 
             btnTambah.Clicked += BtnTambah_Clicked;
         }
 
         private async void BtnTambah_Clicked(object sender, EventArgs e)
         {
-            Barang newBarang = new Barang
-            {
-                KodeBarang = 
-            }
+            var newBarang = (Barang)BindingContext;
+
         }
     }
 }

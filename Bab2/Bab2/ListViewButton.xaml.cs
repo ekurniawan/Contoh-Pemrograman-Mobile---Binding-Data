@@ -20,15 +20,17 @@ namespace Bab2
             myList = new ListViewButtonViewModel(Navigation.PushAsync);
 
             BindingContext = myList;
+
+            
             btnTambah.Clicked += BtnTambah_Clicked;
         }
 
-        private async void BtnTambah_Clicked(object sender, EventArgs e)
+        private void BtnTambah_Clicked(object sender, EventArgs e)
         {
-            //myList.ListItems.Add(new ListItemButton { Title = "Test", Description = "Test", Price = 2000 });
-            var tambahPage = new TambahBarangPage();
-            tambahPage.BindingContext = new Barang();
-            await Navigation.PushAsync(tambahPage);
+            myList.ListItems.Add(new ListItemButton { Title = "Test", Description = "Test", Price = 2000 });
+            //var tambahPage = new TambahBarangPage(myList);
+            //tambahPage.BindingContext = new Barang();
+            //await Navigation.PushAsync(tambahPage);
         }
     }
 }
