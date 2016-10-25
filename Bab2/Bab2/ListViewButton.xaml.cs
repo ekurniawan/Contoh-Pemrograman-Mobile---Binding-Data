@@ -23,10 +23,10 @@ namespace Bab2
             btnTambah.Clicked += BtnTambah_Clicked;
         }
 
-        private void BtnTambah_Clicked(object sender, EventArgs e)
+        private async void BtnTambah_Clicked(object sender, EventArgs e)
         {
             //myList.ListItems.Add(new ListItemButton { Title = "Test", Description = "Test", Price = 2000 });
-
+            await Navigation.PushAsync(new TambahBarangPage());
         }
     }
 }
