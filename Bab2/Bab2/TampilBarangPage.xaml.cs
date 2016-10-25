@@ -12,11 +12,23 @@ namespace Bab2
 {
     public partial class TampilBarangPage : ContentPage
     {
+        private BarangViewModel barangViewModel;
         public TampilBarangPage()
         {
             InitializeComponent();
 
-            BindingContext = new BarangViewModel();
+            barangViewModel = new BarangViewModel();
+            BindingContext = barangViewModel;
+
+            btnTambah.Clicked += BtnTambah_Clicked;
+        }
+
+
+        private async void BtnTambah_Clicked(object sender, EventArgs e)
+        {
+            var tambahPage = new TambahBarangPage(barangViewModel.ListBarang);
+            tambahPage.BindingContext = new Barang();
+            await Navigation.PushAsync(tambahPage);
         }
     }
 }

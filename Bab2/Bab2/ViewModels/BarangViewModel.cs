@@ -12,8 +12,8 @@ namespace Bab2.ViewModels
 {
     public class BarangViewModel : BindableObject
     {
-        private IList<Barang> listBarang;
-        public IList<Barang> ListBarang
+        private ObservableCollection<Barang> listBarang;
+        public ObservableCollection<Barang> ListBarang
         {
             get { return listBarang; }
             set { listBarang = value; OnPropertyChanged("ListBarang"); }

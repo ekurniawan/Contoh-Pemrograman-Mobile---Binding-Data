@@ -24,5 +24,6 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
+    <Button Text="Tambah Barang" x:Name="btnTambah" />
   </StackLayout>
 </ContentPage>
