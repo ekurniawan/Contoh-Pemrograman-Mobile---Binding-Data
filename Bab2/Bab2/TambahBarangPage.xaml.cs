@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Bab2.Models;
 
 namespace Bab2
 {
@@ -13,6 +14,16 @@ namespace Bab2
         public TambahBarangPage()
         {
             InitializeComponent();
+
+            btnTambah.Clicked += BtnTambah_Clicked;
+        }
+
+        private async void BtnTambah_Clicked(object sender, EventArgs e)
+        {
+            Barang newBarang = new Barang
+            {
+                KodeBarang = 
+            }
         }
     }
 }

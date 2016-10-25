@@ -20,32 +20,32 @@
     </Grid.RowDefinitions>
 
     <Label Text="Kode Barang :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="0" />
-    <Entry Placeholder="Kode Barang" HorizontalOptions="StartAndExpand" 
+    <Entry Placeholder="Kode Barang" Text="{Binding KodeBarang}" HorizontalOptions="StartAndExpand" 
            Grid.Column="1" Grid.Row="0" />
 
     <Label Text="Nama Barang :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="1" />
     <Entry Placeholder="Nama Barang" HorizontalOptions="StartAndExpand"
-           Grid.Column="1" Grid.Row="1" />
+           Grid.Column="1" Grid.Row="1" Text="{Binding NamaBarang}" WidthRequest="150" />
 
     <Label Text="Deskripsi :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="2" />
-    <Editor HorizontalOptions="StartAndExpand" 
-           Grid.Column="1" Grid.Row="2" />
+    <Editor HorizontalOptions="StartAndExpand" Text="{Binding Deskripsi}"
+           Grid.Column="1" Grid.Row="2" WidthRequest="200" />
 
     <Label Text="Jumlah :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="3" />
     <Entry Placeholder="Jumlah" HorizontalTextAlignment="End" 
-           Keyboard="Numeric" 
+           Keyboard="Numeric" Text="{Binding Jumlah}"
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="3" />
 
     <Label Text="Harga Beli :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="4" />
     <Entry Placeholder="Harga Beli" HorizontalTextAlignment="End"
-           Keyboard="Numeric"
+           Keyboard="Numeric" Text="{Binding HargaBeli}"
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="4" />
 
     <Label Text="Harga Jual :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="5" />
     <Entry Placeholder="Harga Beli" HorizontalTextAlignment="End"
-           Keyboard="Numeric"
+           Keyboard="Numeric" Text="{Binding HargaJual}"
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="5" />
 
