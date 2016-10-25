@@ -85,6 +85,7 @@
     <Compile Include="TambahBarangPage.xaml.cs">
       <DependentUpon>TambahBarangPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\BarangViewModel.cs" />
     <Compile Include="ViewModels\ListItemViewModel.cs" />
     <Compile Include="ViewModels\ListViewButtonViewModel.cs" />
     <Compile Include="ViewModels\ListViewCustomViewModel.cs" />
