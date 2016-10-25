@@ -9,41 +9,41 @@
     </Grid.ColumnDefinitions>
 
     <Grid.RowDefinitions>
-      <RowDefinition Height="30" />
-      <RowDefinition Height="30" />
-      <RowDefinition Height="30" />
-      <RowDefinition Height="30" />
-      <RowDefinition Height="30" />
-      <RowDefinition Height="30" />
-      <RowDefinition Height="30" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
 
-    <Label Text="Kode Barang :" HorizontalOptions="End" Grid.Column="0" Grid.Row="0" />
+    <Label Text="Kode Barang :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="0" />
     <Entry Placeholder="Kode Barang" HorizontalOptions="StartAndExpand" 
            Grid.Column="1" Grid.Row="0" />
 
-    <Label Text="Nama Barang :" HorizontalOptions="End" Grid.Column="0" Grid.Row="1" />
+    <Label Text="Nama Barang :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="1" />
     <Entry Placeholder="Nama Barang" HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="1" />
 
-    <Label Text="Deskripsi :" HorizontalOptions="End" Grid.Column="0" Grid.Row="2" />
-    <Editor Placeholder="Deskripsi" HorizontalOptions="StartAndExpand" 
+    <Label Text="Deskripsi :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="2" />
+    <Editor HorizontalOptions="StartAndExpand" 
            Grid.Column="1" Grid.Row="2" />
 
-    <Label Text="Jumlah :" HorizontalOptions="End" Grid.Column="0" Grid.Row="3" />
+    <Label Text="Jumlah :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="3" />
     <Entry Placeholder="Jumlah" HorizontalTextAlignment="End" 
            Keyboard="Numeric" 
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="3" />
 
-    <Label Text="Harga Beli :" HorizontalOptions="End" Grid.Column="0" Grid.Row="4" />
+    <Label Text="Harga Beli :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="4" />
     <Entry Placeholder="Harga Beli" HorizontalTextAlignment="End"
            Keyboard="Numeric"
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="4" />
 
-    <Label Text="Harga Jual :" HorizontalOptions="End" Grid.Column="0" Grid.Row="5" />
+    <Label Text="Harga Jual :" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="0" Grid.Row="5" />
     <Entry Placeholder="Harga Beli" HorizontalTextAlignment="End"
            Keyboard="Numeric"
            HorizontalOptions="StartAndExpand"
