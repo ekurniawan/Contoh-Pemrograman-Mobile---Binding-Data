@@ -5,20 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Bab2.Models;
 using Bab2.ViewModels;
+using Bab2.Models;
 
 namespace Bab2
 {
-    public partial class TambahBarangPage : ContentPage
+    public partial class TampilBarangPage : ContentPage
     {
-        public TambahBarangPage()
+        public TampilBarangPage()
         {
             InitializeComponent();
 
-            
+            BindingContext = new BarangViewModel();
         }
-
-       
     }
 }

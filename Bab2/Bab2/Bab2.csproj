@@ -85,6 +85,9 @@
     <Compile Include="TambahBarangPage.xaml.cs">
       <DependentUpon>TambahBarangPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TampilBarangPage.xaml.cs">
+      <DependentUpon>TampilBarangPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\BarangViewModel.cs" />
     <Compile Include="ViewModels\ListItemViewModel.cs" />
     <Compile Include="ViewModels\ListViewButtonViewModel.cs" />
@@ -193,6 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TambahBarangPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TampilBarangPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

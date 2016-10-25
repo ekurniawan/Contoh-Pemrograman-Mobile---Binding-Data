@@ -42,7 +42,7 @@ namespace Bab2.Models
         public decimal HargaBeli
         {
             get { return hargaBeli; }
-            set { hargaBeli = value; OnPropertyChanged("HargaBeli") }
+            set { hargaBeli = value; OnPropertyChanged("HargaBeli"); }
         }
 
         private decimal hargaJual;

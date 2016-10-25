@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bab2.TampilBarangPage" Title="Tampil Barang">
+  <StackLayout>
+    <ListView ItemsSource="{Binding ListBarang}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+              </Grid.ColumnDefinitions>
+
+              <Label Text="{Binding KodeBarang}" Grid.Column="0" />
+              <Label Text="{Binding NamaBarang}" Grid.Column="1" />
+              <Label Text="{Binding Jumlah}" HorizontalOptions="EndAndExpand" Grid.Column="2"/>
+              <Label Text="{Binding HargaJual}" HorizontalOptions="EndAndExpand" Grid.Column="3"/>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>
