@@ -21,8 +21,17 @@ namespace Bab2
             BindingContext = barangViewModel;
 
             btnTambah.Clicked += BtnTambah_Clicked;
+
+            listBarang.ItemTapped += ListBarang_ItemTapped;
         }
 
+        private async void ListBarang_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var itemBarang = (Barang)e.Item;
+            var editPage = new EditBarangPage();
+            editPage.BindingContext = itemBarang;
+            await Navigation.PushAsync(editPage);
+        }
 
         private async void BtnTambah_Clicked(object sender, EventArgs e)
         {

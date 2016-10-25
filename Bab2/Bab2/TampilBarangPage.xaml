@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bab2.TampilBarangPage" Title="Tampil Barang">
   <StackLayout>
-    <ListView ItemsSource="{Binding ListBarang}">
+    <ListView ItemsSource="{Binding ListBarang}" x:Name="listBarang">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
