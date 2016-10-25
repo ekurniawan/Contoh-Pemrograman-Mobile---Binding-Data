@@ -25,7 +25,8 @@ namespace Bab2
 
         private void BtnTambah_Clicked(object sender, EventArgs e)
         {
-            myList.ListItems.Add(new ListItemButton { Title = "Test", Description = "Test", Price = 2000 });
+            //myList.ListItems.Add(new ListItemButton { Title = "Test", Description = "Test", Price = 2000 });
+
         }
     }
 }

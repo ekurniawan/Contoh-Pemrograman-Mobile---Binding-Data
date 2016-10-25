@@ -20,31 +20,31 @@
     </Grid.RowDefinitions>
 
     <Label Text="Kode Barang :" HorizontalOptions="End" Grid.Column="0" Grid.Row="0" />
-    <Entry Placeholder="Kode Barang" Text="{Binding KodeBarang}" HorizontalOptions="StartAndExpand" 
+    <Entry Placeholder="Kode Barang" HorizontalOptions="StartAndExpand" 
            Grid.Column="1" Grid.Row="0" />
 
     <Label Text="Nama Barang :" HorizontalOptions="End" Grid.Column="0" Grid.Row="1" />
-    <Entry Placeholder="Nama Barang" Text="{Binding NamaBarang}" HorizontalOptions="StartAndExpand"
+    <Entry Placeholder="Nama Barang" HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="1" />
 
     <Label Text="Deskripsi :" HorizontalOptions="End" Grid.Column="0" Grid.Row="2" />
-    <Editor Placeholder="Deskripsi" Text="{Binding Deskripsi}" HorizontalOptions="StartAndExpand" 
+    <Editor Placeholder="Deskripsi" HorizontalOptions="StartAndExpand" 
            Grid.Column="1" Grid.Row="2" />
 
     <Label Text="Jumlah :" HorizontalOptions="End" Grid.Column="0" Grid.Row="3" />
-    <Entry Placeholder="Jumlah" Text="{Binding Jumlah}" HorizontalTextAlignment="End" 
+    <Entry Placeholder="Jumlah" HorizontalTextAlignment="End" 
            Keyboard="Numeric" 
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="3" />
 
     <Label Text="Harga Beli :" HorizontalOptions="End" Grid.Column="0" Grid.Row="4" />
-    <Entry Placeholder="Harga Beli" Text="{Binding HargaBeli}" HorizontalTextAlignment="End"
+    <Entry Placeholder="Harga Beli" HorizontalTextAlignment="End"
            Keyboard="Numeric"
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="4" />
 
     <Label Text="Harga Jual :" HorizontalOptions="End" Grid.Column="0" Grid.Row="5" />
-    <Entry Placeholder="Harga Beli" Text="{Binding HargaBeli}" HorizontalTextAlignment="End"
+    <Entry Placeholder="Harga Beli" HorizontalTextAlignment="End"
            Keyboard="Numeric"
            HorizontalOptions="StartAndExpand"
            Grid.Column="1" Grid.Row="5" />
