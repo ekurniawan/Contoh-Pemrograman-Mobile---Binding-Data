@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bab2.ListViewButton" Title="ListView with Button">
+  <StackLayout Orientation="Vertical">
+    <ListView ItemsSource="{Binding ListItems}" RowHeight="100"
+              HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"
+                         Padding="5,10,5,15">
+              <StackLayout HorizontalOptions="Start" Orientation="Vertical">
+                <Label HorizontalOptions="Start" FontSize="20" FontAttributes="Bold"
+                       Text="{Binding Title}"/>
+                <Label HorizontalOptions="Start" FontSize="16"
+                       Text="{Binding Description}"/>
+              </StackLayout>
+              <StackLayout HorizontalOptions="EndAndExpand" Orientation="Horizontal"
+                           WidthRequest="260">
+                <Label HorizontalOptions="Center" FontSize="16" Text="{Binding Price}"/>
+                <Button Text="Buy" HorizontalOptions="End" WidthRequest="60" HeightRequest="25" Command="{Binding BuyCommand}"/>
+                <Button Text="Sell" HorizontalOptions="End" Command="{Binding SellCommand}"/>
+              </StackLayout>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <Button Text="Add" x:Name="btnTambah" />
+  </StackLayout>
+</ContentPage>

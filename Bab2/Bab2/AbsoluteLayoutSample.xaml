@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bab2.AbsoluteLayoutSample">
+  <AbsoluteLayout>
+    <Label Text="Belajar Pemrograman C# untuk membuat Aplikasi Mobile" FontSize="Medium"
+           AbsoluteLayout.LayoutBounds="100,100,200,100" TextColor="Red" />
+    <BoxView Color="Purple" AbsoluteLayout.LayoutBounds=".5,.5,100,100" 
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+    <BoxView Color="Green" AbsoluteLayout.LayoutBounds=".25,.7,100,100"
+             AbsoluteLayout.LayoutFlags="PositionProportional" />
+  </AbsoluteLayout>
+</ContentPage>

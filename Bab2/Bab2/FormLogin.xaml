@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bab2.FormLogin" Title="Login Form">
+  <StackLayout>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+
+      <Label Text="Form Login" FontSize="Large" FontAttributes="Bold"
+             Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" />
+      <Label Text="Username:" FontSize="Medium" 
+             HorizontalOptions="EndAndExpand" Grid.Row="1" Grid.Column="0" />
+      <Entry Placeholder="username" Grid.Row="1" Grid.Column="1" />
+      <Label Text="Password:" FontSize="Medium" 
+             HorizontalOptions="EndAndExpand" Grid.Row="2" Grid.Column="0" />
+      <Entry Placeholder="password" IsPassword="True" Grid.Row="2" Grid.Column="1"/>
+      <Button Text="Submit" Grid.Row="3" Grid.Column="0" 
+              HorizontalOptions="End" WidthRequest="100" />
+      <Button Text="Reset" Grid.Row="3" Grid.Column="1" 
+              HorizontalOptions="End" WidthRequest="100" />
+    </Grid>
+  </StackLayout>
+
+
+</ContentPage>

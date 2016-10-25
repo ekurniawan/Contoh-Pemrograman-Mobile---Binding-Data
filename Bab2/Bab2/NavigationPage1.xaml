@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bab2.NavigationPage1" Title="Halaman 1">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Home" Order="Secondary" 
+                 Clicked="Navigate" CommandParameter="NavigationPage1" />
+    <ToolbarItem Text="Halaman 2" Order="Secondary" 
+                 Clicked="Navigate" CommandParameter="NavigationPage2" />
+  </ContentPage.ToolbarItems>
+  <StackLayout>
+    <Label Text="Home Page" FontSize="Large" />
+    <Entry x:Name="txtNama" Placeholder="masukan nama" />
+    <Button Text="Ke Halaman 2" x:Name="btnDua" />
+  </StackLayout>
+</ContentPage>
