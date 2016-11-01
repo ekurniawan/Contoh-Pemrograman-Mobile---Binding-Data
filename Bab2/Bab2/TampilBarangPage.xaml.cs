@@ -25,6 +25,15 @@ namespace Bab2
             listBarang.ItemTapped += ListBarang_ItemTapped;
         }
 
+        async void Navigate(object sender,EventArgs e)
+        {
+            string type = (string)((ToolbarItem)sender).CommandParameter;
+            Type pageType = Type.GetType("Bab2." + type + ",Bab2");
+            Page page = (Page)Activator.CreateInstance(pageType);
+            await this.Navigation.PushAsync(page);
+
+        }
+
         private async void ListBarang_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var itemBarang = (Barang)e.Item;

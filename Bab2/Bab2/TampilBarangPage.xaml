@@ -2,7 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bab2.TampilBarangPage" Title="Tampil Barang">
-  <StackLayout>
+  
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Halaman 1" Order="Secondary" Clicked="Navigate"
+               CommandParameter="NavigationPage1" />
+    <ToolbarItem Text="Halaman 2" Order="Secondary" Clicked="Navigate"
+               CommandParameter="NavigationPage2" />
+  </ContentPage.ToolbarItems>
+    <StackLayout>
     <ListView ItemsSource="{Binding ListBarang}" x:Name="listBarang">
       <ListView.ItemTemplate>
         <DataTemplate>
