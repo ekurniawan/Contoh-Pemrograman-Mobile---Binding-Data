@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace Bab2
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
