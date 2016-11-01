@@ -18,7 +18,7 @@ namespace Bab2
             //MainPage = new ListViewButton();
 
             //MainPage = new NavigationPage(new NavigationPage1());
-            MainPage = new NavigationPage(new TampilBarangPage());
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
